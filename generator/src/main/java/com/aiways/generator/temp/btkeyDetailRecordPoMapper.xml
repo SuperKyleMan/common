@@ -1,0 +1,236 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.aiways.generator.temp.btkeyDetailRecordPoMapper">
+  <select id="selectByPrimaryKey" parameterType="java.lang.Long" resultType="com.aiways.generator.temp.btkeyDetailRecordPo">
+    select id as id, vin as vin, file_id as fileId, translation as translation, user_id as userId, keyId as keyid, v_value as vValue, value_type as valueType, filename as filename, path as path, full_path as fullPath, size as size, ext_name as extName, master_id as masterId, group_name as groupName, file_type as fileType, is_delete as isDelete, is_used as isUsed, update_mode as updateMode, create_time as createTime, update_time as updateTime, remind_time as remindTime, d_type as dType
+    from t_voice_note_store
+    where id = #{id}
+  </select>
+  <insert id="insert" parameterType="com.aiways.generator.temp.btkeyDetailRecordPo">
+    insert into t_voice_note_store (id, vin, file_id, translation, user_id, keyId, v_value, 
+      value_type, filename, path, full_path, size, ext_name, master_id, 
+      group_name, file_type, is_delete, is_used, update_mode, create_time, 
+      update_time, remind_time, d_type)
+    values (#{id}, #{vin}, #{fileId}, #{translation}, #{userId}, #{keyid}, #{vValue}, 
+      #{valueType}, #{filename}, #{path}, #{fullPath}, #{size}, #{extName}, #{masterId}, 
+      #{groupName}, #{fileType}, #{isDelete}, #{isUsed}, #{updateMode}, #{createTime}, 
+      #{updateTime}, #{remindTime}, #{dType})
+  </insert>
+  <insert id="insertSelective" parameterType="com.aiways.generator.temp.btkeyDetailRecordPo">
+    insert into t_voice_note_store
+    <trim prefix="(" suffix=")" suffixOverrides=",">
+      <if test="id != null">
+        id,
+      </if>
+      <if test="vin != null">
+        vin,
+      </if>
+      <if test="fileId != null">
+        file_id,
+      </if>
+      <if test="translation != null">
+        translation,
+      </if>
+      <if test="userId != null">
+        user_id,
+      </if>
+      <if test="keyid != null">
+        keyId,
+      </if>
+      <if test="vValue != null">
+        v_value,
+      </if>
+      <if test="valueType != null">
+        value_type,
+      </if>
+      <if test="filename != null">
+        filename,
+      </if>
+      <if test="path != null">
+        path,
+      </if>
+      <if test="fullPath != null">
+        full_path,
+      </if>
+      <if test="size != null">
+        size,
+      </if>
+      <if test="extName != null">
+        ext_name,
+      </if>
+      <if test="masterId != null">
+        master_id,
+      </if>
+      <if test="groupName != null">
+        group_name,
+      </if>
+      <if test="fileType != null">
+        file_type,
+      </if>
+      <if test="isDelete != null">
+        is_delete,
+      </if>
+      <if test="isUsed != null">
+        is_used,
+      </if>
+      <if test="updateMode != null">
+        update_mode,
+      </if>
+      <if test="createTime != null">
+        create_time,
+      </if>
+      <if test="updateTime != null">
+        update_time,
+      </if>
+      <if test="remindTime != null">
+        remind_time,
+      </if>
+      <if test="dType != null">
+        d_type,
+      </if>
+    </trim>
+    <trim prefix="values (" suffix=")" suffixOverrides=",">
+      <if test="id != null">
+        #{id},
+      </if>
+      <if test="vin != null">
+        #{vin},
+      </if>
+      <if test="fileId != null">
+        #{fileId},
+      </if>
+      <if test="translation != null">
+        #{translation},
+      </if>
+      <if test="userId != null">
+        #{userId},
+      </if>
+      <if test="keyid != null">
+        #{keyid},
+      </if>
+      <if test="vValue != null">
+        #{vValue},
+      </if>
+      <if test="valueType != null">
+        #{valueType},
+      </if>
+      <if test="filename != null">
+        #{filename},
+      </if>
+      <if test="path != null">
+        #{path},
+      </if>
+      <if test="fullPath != null">
+        #{fullPath},
+      </if>
+      <if test="size != null">
+        #{size},
+      </if>
+      <if test="extName != null">
+        #{extName},
+      </if>
+      <if test="masterId != null">
+        #{masterId},
+      </if>
+      <if test="groupName != null">
+        #{groupName},
+      </if>
+      <if test="fileType != null">
+        #{fileType},
+      </if>
+      <if test="isDelete != null">
+        #{isDelete},
+      </if>
+      <if test="isUsed != null">
+        #{isUsed},
+      </if>
+      <if test="updateMode != null">
+        #{updateMode},
+      </if>
+      <if test="createTime != null">
+        #{createTime},
+      </if>
+      <if test="updateTime != null">
+        #{updateTime},
+      </if>
+      <if test="remindTime != null">
+        #{remindTime},
+      </if>
+      <if test="dType != null">
+        #{dType},
+      </if>
+    </trim>
+  </insert>
+  <update id="updateByPrimaryKeySelective" parameterType="com.aiways.generator.temp.btkeyDetailRecordPo">
+    update t_voice_note_store
+    <set>
+      <if test="vin != null">
+        vin = #{vin},
+      </if>
+      <if test="fileId != null">
+        file_id = #{fileId},
+      </if>
+      <if test="translation != null">
+        translation = #{translation},
+      </if>
+      <if test="userId != null">
+        user_id = #{userId},
+      </if>
+      <if test="keyid != null">
+        keyId = #{keyid},
+      </if>
+      <if test="vValue != null">
+        v_value = #{vValue},
+      </if>
+      <if test="valueType != null">
+        value_type = #{valueType},
+      </if>
+      <if test="filename != null">
+        filename = #{filename},
+      </if>
+      <if test="path != null">
+        path = #{path},
+      </if>
+      <if test="fullPath != null">
+        full_path = #{fullPath},
+      </if>
+      <if test="size != null">
+        size = #{size},
+      </if>
+      <if test="extName != null">
+        ext_name = #{extName},
+      </if>
+      <if test="masterId != null">
+        master_id = #{masterId},
+      </if>
+      <if test="groupName != null">
+        group_name = #{groupName},
+      </if>
+      <if test="fileType != null">
+        file_type = #{fileType},
+      </if>
+      <if test="isDelete != null">
+        is_delete = #{isDelete},
+      </if>
+      <if test="isUsed != null">
+        is_used = #{isUsed},
+      </if>
+      <if test="updateMode != null">
+        update_mode = #{updateMode},
+      </if>
+      <if test="createTime != null">
+        create_time = #{createTime},
+      </if>
+      <if test="updateTime != null">
+        update_time = #{updateTime},
+      </if>
+      <if test="remindTime != null">
+        remind_time = #{remindTime},
+      </if>
+      <if test="dType != null">
+        d_type = #{dType},
+      </if>
+    </set>
+    where id = #{id}
+  </update>
+</mapper>
