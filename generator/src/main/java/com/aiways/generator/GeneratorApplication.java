@@ -30,6 +30,7 @@ public class GeneratorApplication {
         configurationParam.setPoName("btkeyDetailRecordPo");
         configurationParam.setAuthor("maq");
 
+        // 修改标记
         ShellRunner shellRunner = new ShellRunner();
         shellRunner.run(configurationParam);
     }
