@@ -2,7 +2,7 @@
 <!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
 <mapper namespace="com.demo.dao.UserMapper">
 
-  <select id="selectUser" resultType="com.aiways.generator.dao.User" >
+  <select id="selectUser" resultType="com.aiways.pagehelper.dao.User" >
     select
     userID as userid,
       password as password,

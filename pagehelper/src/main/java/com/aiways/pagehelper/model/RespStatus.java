@@ -1,4 +1,4 @@
-package com.aiways.generator.model;
+package com.aiways.pagehelper.model;
 
 public enum RespStatus {
     Success(0, "业务处理成功"),

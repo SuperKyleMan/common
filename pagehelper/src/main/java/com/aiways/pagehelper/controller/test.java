@@ -1,4 +1,4 @@
-package com.aiways.generator.controller;
+package com.aiways.pagehelper.controller;
 
 import com.demo.model.PageResult;
 import com.demo.model.Resp;

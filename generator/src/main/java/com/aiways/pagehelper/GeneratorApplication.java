@@ -1,4 +1,4 @@
-package com.aiways.generator;
+package com.aiways.pagehelper;
 
 
 import org.mybatis.generator.api.ShellRunner;
@@ -19,13 +19,13 @@ public class GeneratorApplication {
         configurationParam.setDriveClass("com.mysql.jdbc.Driver");
         configurationParam.setDatabaseUserId("root");
         configurationParam.setDatabasePassword("root");
-        configurationParam.setJavaFileTatgetPackage("com.aiways.generator.temp");
-        configurationParam.setJavaFileTatgetProject("generator/src/main/java");
-        configurationParam.setMapperFileTatgetPackage("com.aiways.generator.temp");
-        configurationParam.setMapperFileTatgetProject("generator/src/main/java");
+        configurationParam.setJavaFileTatgetPackage("com.aiways.pagehelper.temp");
+        configurationParam.setJavaFileTatgetProject("pagehelper/src/main/java");
+        configurationParam.setMapperFileTatgetPackage("com.aiways.pagehelper.temp");
+        configurationParam.setMapperFileTatgetProject("pagehelper/src/main/java");
         configurationParam.setMapperFileType("XMLMAPPER");
-        configurationParam.setXmlFileTatgetPackage("com.aiways.generator.temp");
-        configurationParam.setXmlFileTatgetProject("generator/src/main/java");
+        configurationParam.setXmlFileTatgetPackage("com.aiways.pagehelper.temp");
+        configurationParam.setXmlFileTatgetProject("pagehelper/src/main/java");
         configurationParam.setTableName("t_voice_note_store");
         configurationParam.setPoName("btkeyDetailRecordPo");
         configurationParam.setAuthor("maq");

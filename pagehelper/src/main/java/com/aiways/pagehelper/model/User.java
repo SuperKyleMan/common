@@ -1,4 +1,4 @@
-package com.aiways.generator.model;
+package com.aiways.pagehelper.model;
 
 import lombok.Data;
 

@@ -1,4 +1,4 @@
-package com.aiways.generator.controller;//package com.controller;
+package com.aiways.pagehelper.controller;//package com.controller;
 //
 //import org.springframework.context.ApplicationListener;
 //import org.springframework.context.annotation.Configuration;

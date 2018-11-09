@@ -1,7 +1,7 @@
-package com.aiways.generator.dao;
+package com.aiways.pagehelper.dao;
 
 
-import com.aiways.generator.model.User;
+import com.aiways.pagehelper.model.User;
 
 import java.util.List;
 

@@ -1,4 +1,4 @@
-package com.aiways.generator.model;
+package com.aiways.pagehelper.model;
 
 import com.github.pagehelper.PageInfo;
 import lombok.Getter;

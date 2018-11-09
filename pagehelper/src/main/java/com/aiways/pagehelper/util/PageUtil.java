@@ -1,7 +1,7 @@
-package com.aiways.generator.util;
+package com.aiways.pagehelper.util;
 
 
-import com.aiways.generator.model.BasePage;
+import com.aiways.pagehelper.model.BasePage;
 import com.github.pagehelper.PageHelper;
 
 import java.lang.reflect.Method;

@@ -1,4 +1,4 @@
-package com.aiways.generator;
+package com.aiways.pagehelper;
 
 import org.mybatis.spring.annotation.MapperScan;
 import org.springframework.boot.SpringApplication;
@@ -6,9 +6,9 @@ import org.springframework.boot.autoconfigure.SpringBootApplication;
 
 @SpringBootApplication
 @MapperScan("com.demo.dao")
-public class GeneratorApplication {
+public class Application {
     public static void main(String args[]){
 
-        SpringApplication.run(GeneratorApplication.class, args);
+        SpringApplication.run(Application.class, args);
     }
 }

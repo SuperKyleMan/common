@@ -1,11 +1,11 @@
-package com.aiways.generator.service;
+package com.aiways.pagehelper.service;
 
 
-import com.aiways.generator.dao.UserMapper;
-import com.aiways.generator.model.PageResult;
-import com.aiways.generator.model.Resp;
-import com.aiways.generator.model.User;
-import com.aiways.generator.util.PageUtil;
+import com.aiways.pagehelper.dao.UserMapper;
+import com.aiways.pagehelper.model.PageResult;
+import com.aiways.pagehelper.model.Resp;
+import com.aiways.pagehelper.model.User;
+import com.aiways.pagehelper.util.PageUtil;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
